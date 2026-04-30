@@ -38,6 +38,15 @@ const photoDetails = [
   ["soccercuttinginside", "Soccer player cutting inside"],
 ];
 
+let photoManifest = photoDetails.map(([pattern, title]) => ({
+  pattern,
+  title,
+  caption: "",
+  story: "",
+  source: "",
+  url: "",
+}));
+
 const photoStorylines = [
   {
     label: "Public realm",
@@ -116,9 +125,8 @@ function observeReveals() {
 }
 
 function formatLabel(key) {
-  const lowerKey = key.toLowerCase();
-  const detail = photoDetails.find(([pattern]) => lowerKey.includes(pattern));
-  if (detail) return detail[1];
+  const metadata = metadataForKey(key);
+  if (metadata?.title) return metadata.title;
 
   return key
     .split("/")
@@ -127,6 +135,34 @@ function formatLabel(key) {
     .replace(/[-_]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function metadataForKey(key) {
+  const lowerKey = key.toLowerCase();
+  return photoManifest.find((item) => item.pattern && lowerKey.includes(item.pattern));
+}
+
+async function loadPhotoManifest() {
+  try {
+    const response = await fetch("./content/photo-manifest.json", { cache: "no-cache" });
+    if (!response.ok) return;
+
+    const manifest = await response.json();
+    if (!Array.isArray(manifest)) return;
+
+    photoManifest = manifest
+      .filter((item) => item && item.pattern && item.title)
+      .map((item) => ({
+        pattern: item.pattern,
+        title: item.title,
+        caption: item.caption || "",
+        story: item.story || "",
+        source: item.source || "",
+        url: item.url || "",
+      }));
+  } catch (error) {
+    console.warn("Photo manifest unavailable; using built-in labels.", error);
+  }
 }
 
 function photosForStory(items, story) {
@@ -295,6 +331,8 @@ async function loadGallery() {
   if (!gallery && !status && !visualStories && !creativeStage) return;
 
   try {
+    await loadPhotoManifest();
+
     const response = await fetch(`${workerBase}/assets?prefix=photos/&limit=1000`);
     if (!response.ok) {
       throw new Error(`Request failed with status ${response.status}`);

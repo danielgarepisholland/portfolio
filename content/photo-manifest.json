@@ -1,0 +1,250 @@
+[
+  {
+    "pattern": "elementaryschoomural",
+    "title": "Leonard R. Flynn Elementary mural",
+    "caption": "Placeholder caption. Replace with the exact story context, date, and publication link.",
+    "story": "civic-making",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "flowersinsf",
+    "title": "Street-side blossoms in San Francisco",
+    "caption": "Placeholder caption. Use this for atmosphere or supporting visual texture.",
+    "story": "quiet-place",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "flowersinsf2",
+    "title": "San Francisco spring blossoms",
+    "caption": "Placeholder caption. Use this for atmosphere or supporting visual texture.",
+    "story": "quiet-place",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "norcalcliff",
+    "title": "Northern California coastal bluff",
+    "caption": "Placeholder caption. Replace with location and project/story context.",
+    "story": "quiet-place",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "norcalocean",
+    "title": "Pacific coastline in Northern California",
+    "caption": "Placeholder caption. Replace with location and project/story context.",
+    "story": "quiet-place",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "paloaltohsdroneshot",
+    "title": "Palo Alto High School from above",
+    "caption": "Placeholder caption. Connect this to campus, place, or built-environment coverage.",
+    "story": "quiet-place",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "palysunset",
+    "title": "Palo Alto streetlight at sunset",
+    "caption": "Placeholder caption. Connect this to place, streetscape, or campus context.",
+    "story": "public-realm",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "communitymosaic",
+    "title": "Community mosaic in progress",
+    "caption": "Placeholder caption. Replace with the exact Paly Voice story context.",
+    "story": "civic-making",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "elementaryschooflute",
+    "title": "Student flute performance",
+    "caption": "Placeholder caption. Replace with event name and story link.",
+    "story": "campus-rituals",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "gardenvolunteerwithkid",
+    "title": "Garden volunteer table",
+    "caption": "Placeholder caption. Replace with event, publication, and story link.",
+    "story": "civic-making",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "graduation",
+    "title": "Graduation procession",
+    "caption": "Placeholder caption. Replace with date, school year, and story link.",
+    "story": "campus-rituals",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "greenwasteeducationkid",
+    "title": "Green waste education table",
+    "caption": "Placeholder caption. Replace with event and reporting context.",
+    "story": "civic-making",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "newbagelshop",
+    "title": "Neighborhood bagel shop opening",
+    "caption": "Placeholder caption. Replace with business name, date, and story link.",
+    "story": "public-realm",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "pottery",
+    "title": "Pottery wheel demonstration",
+    "caption": "Placeholder caption. Replace with class/event and story context.",
+    "story": "civic-making",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "spiritweekfloats",
+    "title": "Spirit week float building",
+    "caption": "Placeholder caption. Replace with spirit week context and story link.",
+    "story": "campus-rituals",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "spiritweekhappy",
+    "title": "Student crowd during spirit week",
+    "caption": "Placeholder caption. Replace with event, date, and story link.",
+    "story": "campus-rituals",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "tiredesther",
+    "title": "Candid moment in a student crowd",
+    "caption": "Placeholder caption. Confirm whether this should be public before featuring.",
+    "story": "campus-rituals",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "trumpet",
+    "title": "Marching band trumpet line",
+    "caption": "Placeholder caption. Replace with event and story link.",
+    "story": "campus-rituals",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "udiststreetfar1",
+    "title": "University District street fair crowd",
+    "caption": "Placeholder caption. Replace with event date and publication context.",
+    "story": "public-realm",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "udiststreetfar2",
+    "title": "Vendors and pedestrians at the U-District street fair",
+    "caption": "Placeholder caption. Replace with event date and publication context.",
+    "story": "public-realm",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "riyakapi",
+    "title": "Portrait study",
+    "caption": "Placeholder caption. Add subject/event context if this remains public.",
+    "story": "portraits",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "shyannakapi",
+    "title": "Portrait study",
+    "caption": "Placeholder caption. Add subject/event context if this remains public.",
+    "story": "portraits",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "soyang",
+    "title": "Outdoor portrait by the water",
+    "caption": "Placeholder caption. Add subject/event context if this remains public.",
+    "story": "portraits",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "wedding",
+    "title": "Wedding portrait",
+    "caption": "Placeholder caption. Confirm whether this belongs in the public portfolio.",
+    "story": "portraits",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "yash",
+    "title": "Portrait study",
+    "caption": "Placeholder caption. Add subject/event context if this remains public.",
+    "story": "portraits",
+    "source": "",
+    "url": ""
+  },
+  {
+    "pattern": "cheertower",
+    "title": "Cheer stunt under stadium lights",
+    "caption": "Placeholder caption. Replace with game/event and story link.",
+    "story": "motion",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "dancepompoms",
+    "title": "Poms performance in motion",
+    "caption": "Placeholder caption. Replace with game/event and story link.",
+    "story": "motion",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "footballqbrush",
+    "title": "Football sideline action",
+    "caption": "Placeholder caption. Replace with game/event and story link.",
+    "story": "motion",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "footballqbrush2",
+    "title": "Football play under pressure",
+    "caption": "Placeholder caption. Replace with game/event and story link.",
+    "story": "motion",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "socceraerialcontest",
+    "title": "Soccer aerial contest",
+    "caption": "Placeholder caption. Replace with game/event and story link.",
+    "story": "motion",
+    "source": "Paly Voice",
+    "url": ""
+  },
+  {
+    "pattern": "soccercuttinginside",
+    "title": "Soccer player cutting inside",
+    "caption": "Placeholder caption. Replace with game/event and story link.",
+    "story": "motion",
+    "source": "Paly Voice",
+    "url": ""
+  }
+]
