@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive | Daniel Garepis-Holland</title>
+    <meta
+      name="description"
+      content="Project and visual archive for Daniel Garepis-Holland."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f6f2ed'/%3E%3Ctext x='10' y='43' font-family='Georgia' font-size='28' fill='%23182b3e'%3EDG%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <div class="scroll-meter" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="./index.html#splash" aria-label="Daniel Garepis-Holland home">DGH</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./creative.html">Creative</a>
+        <a href="./index.html#professional">Professional</a>
+        <a href="./index.html#brand">Brand</a>
+        <a href="./index.html#visual">Visual</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="archive-hero section-panel">
+        <p class="small-label">Archive</p>
+        <h1>Projects, drafts, visual essays, and working evidence.</h1>
+        <p>
+          This page is for material that should be discoverable without crowding the
+          homepage: class projects, StoryMaps, journalism, photography, and future case studies.
+        </p>
+      </section>
+
+      <section class="project-slots section-panel" aria-label="Project archive">
+        <div class="slot-grid">
+          <article class="slot-card reveal">
+            <span>Planning / GIS</span>
+            <h3>Environmental Response in Rainier Beach</h3>
+            <p>
+              ArcGIS StoryMap on changes in the natural, cultural, and built
+              environment over time. Add screenshots and your role notes here.
+            </p>
+            <a href="https://storymaps.arcgis.com/stories/e4d56ad3669442dd81b327d00836941e">Open StoryMap</a>
+          </article>
+          <article class="slot-card reveal">
+            <span>Planning studio</span>
+            <h3>Granite Falls site planning</h3>
+            <p>
+              Future case study slot for the cleaner site plan, role, constraints,
+              and the balance between program, parking, access, and outdoor space.
+            </p>
+          </article>
+          <article class="slot-card reveal">
+            <span>Reporting archive</span>
+            <h3>Paly Voice writing and photography</h3>
+            <p>
+              Local politics, school board, housing, COVID-19, sports, multimedia,
+              and photo coverage from student journalism.
+            </p>
+            <a href="https://palyvoice.com/staff_name/daniel-garepis-holland/">Open archive</a>
+          </article>
+          <article class="slot-card reveal">
+            <span>Photo essay</span>
+            <h3>University District Street Fair</h3>
+            <p>
+              Candidate visual essay from the local photo folder: public space,
+              street life, vendors, crowds, and urban texture.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="reporting-threads section-panel" aria-label="Paly Voice reporting threads">
+        <div class="thread-copy reveal">
+          <p class="small-label">Paly Voice threads</p>
+          <h2>Reporting as civic observation.</h2>
+          <p>
+            The archive can be organized around recurring public-life questions:
+            housing pressure, school governance, local politics, campus culture,
+            athletics, and multimedia field reporting.
+          </p>
+          <a href="https://palyvoice.com/staff_name/daniel-garepis-holland/">Open full Paly Voice archive</a>
+        </div>
+        <div class="thread-list">
+          <article class="thread-card reveal">
+            <span>Local politics</span>
+            <h3>Election, school board, and city coverage</h3>
+            <p>Use this thread for stories about governance, representation, public decisions, and civic institutions.</p>
+          </article>
+          <article class="thread-card reveal">
+            <span>Housing / place</span>
+            <h3>Affordability, development, and public space</h3>
+            <p>Connects naturally to planning: local housing debates, street life, school facilities, and built-environment context.</p>
+          </article>
+          <article class="thread-card reveal">
+            <span>Campus culture</span>
+            <h3>Student life, events, and community rituals</h3>
+            <p>Shows how institutions feel from the ground level: crowds, ceremonies, performances, and everyday participation.</p>
+          </article>
+          <article class="thread-card reveal">
+            <span>Visual desk</span>
+            <h3>Sports, multimedia, and photojournalism</h3>
+            <p>Use for image-forward work where sequencing, timing, and visual judgment carry the story.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="visual-band section-panel" id="visual">
+        <div class="visual-copy reveal">
+          <p class="small-label">R2 photo stories</p>
+          <h2>Curated image sequences.</h2>
+          <p id="gallery-status">Loading photo archive...</p>
+        </div>
+        <div class="visual-stories" id="visual-stories" aria-live="polite"></div>
+        <div class="photo-strip" id="photo-gallery" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p>Daniel Garepis-Holland</p>
+      <a href="mailto:danielgarepisholland@gmail.com">danielgarepisholland@gmail.com</a>
+      <a href="./index.html#splash">Home</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Work | Daniel Garepis-Holland</title>
+    <meta
+      name="description"
+      content="Creative portfolio for Daniel Garepis-Holland: photography, journalism, design, and brand identity."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f6f2ed'/%3E%3Ctext x='10' y='43' font-family='Georgia' font-size='28' fill='%23182b3e'%3EDG%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body class="creative-page">
+    <div class="scroll-meter" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="./index.html#splash" aria-label="Daniel Garepis-Holland home">DGH</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./creative.html">Creative</a>
+        <a href="./index.html#professional">Professional</a>
+        <a href="./index.html#brand">Brand</a>
+        <a href="./archive.html">Archive</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="creative-hero section-panel">
+        <div class="creative-hero-copy">
+          <p class="small-label">Creative work</p>
+          <h1>Photographs, stories, brand, and identity.</h1>
+          <p>
+            A separate lane for the work that should be felt first: visual reporting,
+            public life, campus culture, motion, design, and identity work.
+          </p>
+        </div>
+        <div class="creative-stage massive reveal" id="creative-stage" aria-live="polite"></div>
+      </section>
+
+      <section class="visual-band section-panel" id="visual">
+        <div class="visual-copy reveal">
+          <p class="small-label">Photo stories</p>
+          <h2>Six edited directions.</h2>
+          <p>
+            Each lead image anchors a story direction. Supporting images sit below
+            their lead, and the full contact sheet stays at the end for captioning.
+          </p>
+          <a href="https://palyvoice.com/staff_name/daniel-garepis-holland/">Paly Voice archive</a>
+          <p id="gallery-status">Loading photo archive...</p>
+        </div>
+        <div class="visual-stories editorial-stories" id="visual-stories" aria-live="polite"></div>
+        <div class="photo-wall-label" aria-hidden="true">
+          <span>Complete contact sheet</span>
+        </div>
+        <div class="photo-strip contact-gallery" id="photo-gallery" aria-live="polite"></div>
+      </section>
+
+      <section class="creative-design section-panel">
+        <div class="creative-design-copy reveal">
+          <p class="small-label">Brand development</p>
+          <h2>Interlake Speech & Debate identity work.</h2>
+          <p>
+            A school-affiliated brand development project: visual identity, SVG
+            marks, color language, mascot treatment, and public-facing design rules
+            for Interlake Speech & Debate.
+          </p>
+        </div>
+        <div class="brand-development-board reveal">
+          <div class="identity-layer" aria-hidden="true">
+            <img class="identity-badge" src="./assets/interlake-badge.svg" alt="" />
+            <span class="shark-watermark shark-a"></span>
+            <span class="shark-watermark shark-b"></span>
+          </div>
+          <div class="brand-spec-card brand-spec-primary">
+            <span>Identity</span>
+            <img src="./assets/interlake-badge.svg" alt="Interlake Speech and Debate badge" />
+          </div>
+          <div class="brand-spec-card brand-spec-shark">
+            <span class="shark-mask" aria-hidden="true"></span>
+            <strong>Mascot vector</strong>
+          </div>
+          <div class="brand-color-row" aria-label="Interlake brand color studies">
+            <span style="--swatch: #182b3e">Navy</span>
+            <span style="--swatch: #f8f5ef">Light</span>
+            <span style="--swatch: #8b3440">Accent</span>
+          </div>
+          <div class="brand-marks" aria-label="Integrated Interlake visual identity">
+            <div class="brand-token badge-token">
+              <img src="./assets/interlake-badge.svg" alt="Interlake Speech and Debate badge" />
+              <span>Badge family</span>
+            </div>
+            <div class="brand-token shark-token">
+              <span class="shark-mask" aria-hidden="true"></span>
+              <span>Vector mascot</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p>Daniel Garepis-Holland</p>
+      <a href="mailto:danielgarepisholland@gmail.com">danielgarepisholland@gmail.com</a>
+      <a href="./index.html#professional">Professional work</a>
+    </footer>
+  </body>
+</html>

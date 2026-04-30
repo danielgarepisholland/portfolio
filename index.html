@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Garepis-Holland</title>
+    <meta
+      name="description"
+      content="Portfolio for Daniel Garepis-Holland, spanning planning, political science, visual identity, photography, and journalism."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f6f2ed'/%3E%3Ctext x='10' y='43' font-family='Georgia' font-size='28' fill='%23182b3e'%3EDG%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <div class="scroll-meter" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#splash" aria-label="Daniel Garepis-Holland home">DGH</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./creative.html">Creative</a>
+        <a href="#professional">Professional</a>
+        <a href="#brand">Brand</a>
+        <a href="./archive.html">Archive</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="splash section-panel" id="splash" aria-label="Portfolio introduction">
+        <div class="splash-copy">
+          <p class="small-label">Daniel Garepis-Holland</p>
+          <h1>Public life, two ways.</h1>
+          <p>
+            Creative work in photography, journalism, and design. Professional
+            work in planning, policy, housing, and public systems.
+          </p>
+        </div>
+
+        <div class="motion-system urban-system" aria-hidden="true">
+          <svg class="urban-map" viewBox="0 0 920 640">
+            <g class="parcel-field">
+              <rect x="112" y="126" width="126" height="88" />
+              <rect x="258" y="126" width="178" height="88" />
+              <rect x="462" y="126" width="132" height="88" />
+              <rect x="616" y="126" width="158" height="88" />
+              <rect x="112" y="242" width="96" height="142" />
+              <rect x="230" y="242" width="206" height="142" />
+              <rect x="462" y="242" width="96" height="142" />
+              <rect x="580" y="242" width="194" height="142" />
+              <rect x="112" y="416" width="166" height="104" />
+              <rect x="302" y="416" width="134" height="104" />
+              <rect x="462" y="416" width="162" height="104" />
+              <rect x="648" y="416" width="126" height="104" />
+            </g>
+            <path class="street-line street-a" d="M82 228H805" />
+            <path class="street-line street-b" d="M82 400H805" />
+            <path class="street-line street-c" d="M446 92V548" />
+            <path id="main-route" class="route-line" d="M112 400H230V242H446V228H580V400H774" />
+            <circle class="route-tracer" r="7">
+              <animateMotion dur="7.5s" repeatCount="indefinite" rotate="auto">
+                <mpath href="#main-route" />
+              </animateMotion>
+            </circle>
+            <path class="soft-contour contour-a" d="M96 156C178 80 322 72 418 118s156 50 246 12 158-36 218 16" />
+            <path class="soft-contour contour-b" d="M60 510c116-70 219-84 309-42s174 56 254 16 139-40 222 10" />
+            <circle class="map-pin pin-a" cx="230" cy="400" r="6" />
+            <circle class="map-pin pin-b" cx="446" cy="228" r="6" />
+            <circle class="map-pin pin-c" cx="580" cy="400" r="6" />
+            <path class="north-mark" d="M804 496l26-70 26 70h-18l-8-22-8 22z" />
+          </svg>
+        </div>
+
+        <div class="portfolio-doors" aria-label="Portfolio paths">
+          <a class="portfolio-door creative-door" href="#creative">
+            <span>Creative work</span>
+            <strong>Photos, reporting, design</strong>
+          </a>
+          <a class="portfolio-door professional-door" href="#professional">
+            <span>Professional work</span>
+            <strong>Planning, policy, systems</strong>
+          </a>
+        </div>
+
+        <a class="splash-scroll" href="#creative" aria-label="Scroll to creative work">
+          Enter portfolio
+        </a>
+      </section>
+
+      <section class="creative-lead section-panel" id="creative">
+        <div class="creative-lead-copy reveal">
+          <p class="small-label">Creative portfolio</p>
+          <h2>Photography, reporting, design, and identity.</h2>
+          <p>
+            Start here for the visual work: public space, campus rituals, sports,
+            civic life, student journalism, and brand development.
+          </p>
+          <a href="./creative.html">Open full creative portfolio</a>
+        </div>
+        <div class="creative-stage reveal" id="creative-stage" aria-live="polite"></div>
+      </section>
+
+      <section class="professional-bridge section-panel" id="professional">
+        <div class="professional-copy reveal">
+          <p class="small-label">Professional portfolio</p>
+          <h2>The practical side: planning, policy, housing, and public systems.</h2>
+          <p>
+            If you are looking for the more traditional resume path, this is the
+            direct route: local government planning, affordable housing operations,
+            public affairs, research, and project case studies.
+          </p>
+        </div>
+        <div class="profile-facts reveal" aria-label="Profile summary">
+          <article>
+            <span>Education</span>
+            <strong>University of Washington</strong>
+            <p>B.A. Political Science + B.A. Community, Environment & Planning, June 2027.</p>
+          </article>
+          <article>
+            <span>Planning</span>
+            <strong>City of Brisbane</strong>
+            <p>Parking ordinance work, development outreach, staff reports, and permit support.</p>
+          </article>
+          <article>
+            <span>Housing</span>
+            <strong>Eden Housing</strong>
+            <p>Facilities support, site maps, evacuation plans, inspections, and capital work tracking.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="planning-feature section-panel" id="planning">
+        <div class="planning-copy reveal">
+          <p class="small-label">Planning / policy spine</p>
+          <h2>Local government, land use, housing, and public communication.</h2>
+          <p>
+            My planning interests sit where public rules meet built environments:
+            parking policy, housing operations, development review, community outreach,
+            site feasibility, and public-facing communication.
+          </p>
+        </div>
+
+        <div class="planning-grid reveal">
+          <article class="planning-card primary">
+            <span>City of Brisbane</span>
+            <h3>Planning Commission staff work and community outreach</h3>
+            <p>
+              Prepared staff reports, supported permit reviews, researched land use and
+              housing law, and presented parking ordinance work tied to emerging uses
+              and transportation policy compliance.
+            </p>
+          </article>
+          <article class="planning-card">
+            <span>Studio work</span>
+            <h3>Granite Falls childcare feasibility</h3>
+            <p>
+              Contributed site planning work for a UW studio feasibility study,
+              evaluating parcel constraints, buildable area, play area, parking,
+              market context, and a draft facility concept.
+            </p>
+          </article>
+          <article class="planning-card">
+            <span>Affordable housing</span>
+            <h3>Eden Housing facilities support</h3>
+            <p>
+              Updated site maps and evacuation plans across affordable housing
+              properties and supported inspection tracking for capital work.
+            </p>
+          </article>
+          <article class="planning-card">
+            <span>Public affairs</span>
+            <h3>Caltrans communications</h3>
+            <p>
+              Drafted public communications around traffic, construction, highway
+              closures, and active transportation project events.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="flagship section-panel" id="brand">
+        <div class="flagship-copy reveal">
+          <p class="small-label">Brand development</p>
+          <h2>Interlake Speech & Debate identity work.</h2>
+          <p>
+            A creative identity project for a large speech and debate program:
+            badge design, SVG mark treatment, mascot use, color language, and
+            public-facing visual rules.
+          </p>
+          <div class="stat-row" aria-label="Project facts">
+            <div><strong>150+</strong><span>members served</span></div>
+            <div><strong>SVG</strong><span>identity assets</span></div>
+            <div><strong>2026</strong><span>active brand work</span></div>
+          </div>
+        </div>
+
+        <div class="brand-development-board reveal">
+          <div class="identity-layer" aria-hidden="true">
+            <img
+              class="identity-badge"
+              src="./assets/interlake-badge.svg"
+              alt=""
+            />
+            <span class="shark-watermark shark-a"></span>
+            <span class="shark-watermark shark-b"></span>
+          </div>
+          <div class="brand-spec-card brand-spec-primary">
+            <span>Identity</span>
+            <img src="./assets/interlake-badge.svg" alt="Interlake Speech and Debate badge" />
+          </div>
+          <div class="brand-spec-card brand-spec-shark">
+            <span class="shark-mask" aria-hidden="true"></span>
+            <strong>Mascot vector</strong>
+          </div>
+          <div class="brand-color-row" aria-label="Interlake brand color studies">
+            <span style="--swatch: #182b3e">Navy</span>
+            <span style="--swatch: #f8f5ef">Light</span>
+            <span style="--swatch: #8b3440">Accent</span>
+          </div>
+          <div class="brand-marks" aria-label="Integrated Interlake visual identity">
+            <div class="brand-token badge-token">
+              <img
+                src="./assets/interlake-badge.svg"
+                alt="Interlake Speech and Debate badge"
+              />
+              <span>Badge family</span>
+            </div>
+            <div class="brand-token shark-token">
+              <span class="shark-mask" aria-hidden="true"></span>
+              <span>Vector mascot</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-index section-panel" id="work">
+        <div class="section-intro reveal">
+          <p class="small-label">Selected work</p>
+          <h2>Projects can be visual, analytical, operational, or all three.</h2>
+        </div>
+
+        <div class="work-list">
+          <article class="work-item reveal">
+            <span>Political science</span>
+            <h3>Cooperation, Coexistence, or Conflict?</h3>
+            <p>
+              Political science research paper on rebel group interactions in internal
+              armed conflicts, focusing on alliances, competition, identity, and strategy.
+            </p>
+          </article>
+          <article class="work-item reveal">
+            <span>Planning studio</span>
+            <h3>Granite Falls childcare feasibility study</h3>
+            <p>
+              Site planning and feasibility work for a proposed childcare facility,
+              connecting parcel conditions, regulations, market context, and public need.
+            </p>
+          </article>
+          <article class="work-item reveal">
+            <span>Identity design</span>
+            <h3>Interlake S&D brand development</h3>
+            <p>
+              Visual identity, SVG mark treatment, mascot use, and public-facing
+              design rules for a large student program.
+            </p>
+          </article>
+          <article class="work-item reveal">
+            <span>Visual reporting</span>
+            <h3>Photography and journalism archive</h3>
+            <p>
+              Editorial photography, campus coverage, sports, news, and multimedia work
+              developed through student journalism, including a broad Paly Voice archive.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="archive-teaser section-panel">
+        <div class="archive-teaser-copy reveal">
+          <p class="small-label">More work</p>
+          <h2>Project archive lives one layer deeper.</h2>
+          <p>
+            StoryMaps, journalism archives, photo essays, and in-progress case studies
+            are moving to a separate archive page so the homepage can stay clear.
+          </p>
+          <a href="./archive.html">Open archive</a>
+        </div>
+      </section>
+
+      <section class="visual-band section-panel" id="visual">
+        <div class="visual-copy reveal">
+          <p class="small-label">Visual reporting</p>
+          <h2>Public life, photographed.</h2>
+          <p>
+            The photography now works as edited visual evidence: public space,
+            civic making, campus rituals, motion, portraits, and atmosphere.
+          </p>
+          <a href="https://palyvoice.com/staff_name/daniel-garepis-holland/">Paly Voice archive</a>
+          <p id="gallery-status">Loading photo archive...</p>
+        </div>
+        <div class="visual-stories" id="visual-stories" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p>Daniel Garepis-Holland</p>
+      <a href="mailto:danielgarepisholland@gmail.com">danielgarepisholland@gmail.com</a>
+      <a href="https://www.interlakesnd.org/">interlakesnd.org</a>
+    </footer>
+  </body>
+</html>
