@@ -187,13 +187,15 @@ function photoExpandButton(photo, alt, imgClass = "") {
   const safeUrl = escapeHtml(photo.url);
   const safeAlt = escapeHtml(alt);
   const safeClass = escapeHtml(imgClass);
+  const metadata = metadataForKey(photo.key);
+  const caption = metadata?.caption ? `${metadata.title}: ${metadata.caption}` : alt;
 
   return `
     <button
       class="photo-expand"
       type="button"
       data-full="${safeUrl}"
-      data-caption="${safeAlt}"
+      data-caption="${escapeHtml(caption)}"
       aria-label="Expand photograph: ${safeAlt}"
     >
       <img
@@ -293,9 +295,15 @@ function renderVisualStories(items) {
       if (!photos.length) return "";
 
       const [leadPhoto, ...supportingPhotos] = photos;
-      const supportingMarkup = supportingPhotos
+      const displaySupportPhotos = supportingPhotos.length === 3
+        ? supportingPhotos.slice(0, 2)
+        : supportingPhotos;
+      const supportingMarkup = displaySupportPhotos
         .map((photo, index) => `
-          <figure class="story-support-photo story-support-photo-${(index % 4) + 1}">
+          <figure
+            class="story-support-photo story-support-photo-${(index % 4) + 1}"
+            data-photo-key="${escapeHtml(photo.key)}"
+          >
             <div class="story-support-frame">
               ${photoExpandButton(photo, formatLabel(photo.key))}
             </div>
@@ -316,7 +324,7 @@ function renderVisualStories(items) {
               <p>${story.text}</p>
             </div>
           </div>
-          <div class="story-support-wall">
+          <div class="story-support-wall story-support-wall-${displaySupportPhotos.length}">
             ${supportingMarkup}
           </div>
         </article>
@@ -353,7 +361,7 @@ async function loadGallery() {
 
     if (!gallery) {
       if (status) {
-        status.textContent = `${items.length} images available in the current R2 archive.`;
+        status.textContent = `${items.length} images available in the current photo archive.`;
       }
       observeReveals();
       return;
@@ -365,15 +373,15 @@ async function loadGallery() {
     if (status) {
       status.textContent =
         visibleItems.length === items.length
-          ? `${items.length} images loaded from the current R2 archive.`
-          : `Showing ${visibleItems.length} selected images from ${items.length} current R2 uploads.`;
+          ? `${items.length} images loaded from the current photo archive.`
+          : `Showing ${visibleItems.length} selected images from ${items.length} current uploads.`;
     }
 
     gallery.innerHTML = visibleItems
       .map((item, index) => {
         const label = formatLabel(item.key);
         return `
-          <figure class="gallery-card gallery-card-${(index % 9) + 1} reveal">
+          <figure class="gallery-card gallery-card-${(index % 9) + 1} reveal" data-photo-key="${escapeHtml(item.key)}">
             <div class="gallery-frame">
               ${photoExpandButton(item, label)}
             </div>
@@ -386,7 +394,7 @@ async function loadGallery() {
     observeReveals();
   } catch (error) {
     if (status) {
-      status.textContent = "Photo archive unavailable. Check the Worker endpoint or the R2 photos/ prefix.";
+      status.textContent = "Photo archive unavailable. Check the asset index or photo folder.";
     }
     console.error(error);
   }
