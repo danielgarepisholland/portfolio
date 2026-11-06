@@ -29,7 +29,7 @@ Rollback: delete the Worker domain, recreate the CNAME, re-add the domain to Pag
 ## Behavior notes
 - `.html` URLs 307-redirect to clean URLs (`/creative.html` -> `/creative`), the default
   asset-serving behavior, same as Pages.
-- Per-file limit 25 MiB; the largest file (podcast mp3) is 25,035,411 bytes (~23.9 MiB).
+- Per-file limit 25 MiB; the podcast mp3 was 25,035,411 bytes (~23.9 MiB) and was re-encoded 2026-11-05 to mono 64 kbps (14.3 MB).
 - Do not copy README, .git, or untracked private folders into dist/.
 - Old Pages project `portfolio` (portfolio-3li.pages.dev) is intentionally NOT deleted.
 
