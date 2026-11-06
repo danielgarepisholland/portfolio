@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Mother's Day</title>
+    <meta
+      name="description"
+      content="A Mother's Day card told through one photo from every year, 2004 to now."
+    />
+    <link rel="stylesheet" href="./mothers-day.css?v=20260510" />
+    <script type="module" src="./mothers-day.js?v=20260510"></script>
+  </head>
+  <body>
+    <div class="desktop-only">
+      <h1>Please open this card on a laptop.</h1>
+      <p>It is designed as a wide-screen Mother's Day card.</p>
+    </div>
+
+    <header class="card-header" aria-label="Card controls">
+      <a class="wordmark" href="./index.html">DGH</a>
+      <nav class="card-nav" aria-label="Mother's Day card sections">
+        <a href="#note">Note</a>
+        <a href="#photos">Photos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="opening-card" aria-labelledby="card-title">
+        <div class="card-cover">
+          <div class="cover-photo cover-photo-left">
+            <img src="./assets/mothersday/web/2005.jpg" alt="" />
+          </div>
+          <div class="cover-center">
+            <p>Mother's Day 2026</p>
+            <h1 id="card-title">For My Moms</h1>
+            <a class="primary-link" href="#note">Open the card</a>
+          </div>
+          <div class="cover-photo cover-photo-right">
+            <img src="./assets/mothersday/web/2026.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="note-section" id="note" aria-labelledby="note-title">
+        <div class="note-paper">
+          <p class="date-line">A note before the photos</p>
+          <h2 id="note-title">Happy Mother's Day.</h2>
+          <div class="written-note">
+            <p>
+              Thank you for making a life where love was never abstract. It was
+              in kitchens and train stations, soccer stadiums and parks, road
+              trips and restaurants, jokes and hugs and the steady feeling that
+              I was safe to become myself.
+            </p>
+            <p>
+              I love you both more than I can fit into one card. I hope this
+              little timeline feels like what you have given me: a whole life
+              of memories, and the gift of knowing I am loved.
+            </p>
+            <p class="signature">Love, Daniel</p>
+          </div>
+          <a class="primary-link note-link" href="#photos">See the years</a>
+        </div>
+      </section>
+
+      <section class="timeline-section" id="photos" aria-labelledby="timeline-title">
+        <div class="timeline-intro">
+          <p class="date-line">2004-now</p>
+          <h2 id="timeline-title">Every Year</h2>
+        </div>
+
+        <div class="viewer" aria-live="polite">
+          <div class="photo-stage">
+            <button class="photo-button" type="button" aria-label="Open current photo">
+              <img id="active-photo" alt="" />
+            </button>
+          </div>
+
+          <aside class="memory-panel">
+            <span id="active-year" class="year-label">2004</span>
+            <div class="controls" aria-label="Timeline controls">
+              <button class="icon-button" id="previous-year" type="button" aria-label="Previous year">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button class="play-button" id="play-pause" type="button">Pause</button>
+              <button class="icon-button" id="next-year" type="button" aria-label="Next year">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+
+        <div class="year-strip" id="year-strip" aria-label="Choose a year"></div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close photo">×</button>
+      <img id="lightbox-image" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </body>
+</html>
