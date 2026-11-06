@@ -11,8 +11,10 @@ Migrated 2026-11-05. Written so the same recipe can be reused for the lilyflower
 - Custom domain: `garepis.net` (zone 3cf4bcf910fc6d46fcf671e8ee309040) attached to Worker `portfolio`
   (domain id 254db5d7a566d88e63bcece37b119107deff5152). Cloudflare manages the DNS record
   (shows as a proxied AAAA `100::`) and the Let's Encrypt certificate.
-- workers.dev URL still enabled: https://portfolio.danielgarepisholland.workers.dev
-  (set `"workers_dev": false` and `"preview_urls": false` in wrangler.jsonc to turn off).
+- workers.dev URL and preview URLs are disabled (`workers_dev: false`, `preview_urls: false`
+  in wrangler.jsonc). To test before attaching a domain, temporarily set `workers_dev: true`.
+- Git auto-deploy: Workers Builds trigger on repo danielgarepisholland/portfolio, branch main,
+  build/deploy commands as in the section below. Verified working 2026-11-05.
 - Gallery data: separate Worker `r2-asset-index` (untouched) reading R2 bucket `photos-1`;
   images served from the bucket's r2.dev public URL. r2.dev is rate-limited and not meant for
   production; consider a custom domain on the bucket (e.g. photos.garepis.net) later.
@@ -31,7 +33,8 @@ Rollback: delete the Worker domain, recreate the CNAME, re-add the domain to Pag
   asset-serving behavior, same as Pages.
 - Per-file limit 25 MiB; the podcast mp3 was 25,035,411 bytes (~23.9 MiB) and was re-encoded 2026-11-05 to mono 64 kbps (14.3 MB).
 - Do not copy README, .git, or untracked private folders into dist/.
-- Old Pages project `portfolio` (portfolio-3li.pages.dev) is intentionally NOT deleted.
+- Old Pages project `portfolio` (portfolio-3li.pages.dev) was deleted 2026-11-05 after the
+  Worker ran cleanly; rollback to Pages is no longer possible.
 
 ## Reusing for lilyflower.app
 - New repo/folder: add `wrangler.jsonc` with its own name and `assets.directory`.
